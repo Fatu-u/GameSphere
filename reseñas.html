@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameSphere - Reseñas</title>
+    <!-- Bootstrap  gogogo -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Íconos de font awesome :D -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Bootstrap JS --> 
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Script personalizado -->
+    <script src="js/script.js"></script>
+
+    <!-- jQuery 3.6.0 slim + jQuery Migrate para compatibilidad -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-migrate-3.4.0.min.js"></script>
+
+    <link rel="icon" type="image/png" href="img/logo (1).png" sizes="32x32">
+
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo (1).png" alt="GameSphere" height="50" class="d-inline-block align-top">
+                GameSphere
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="noticias.html">Noticias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reseñas.html">Reseñas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="my-5 container">
+        <h1 class="text-center mb-4">Reseñas de Juegos</h1>
+        
+        <!-- Filtros -->
+        <div class="row mb-4">
+            <div class="col-md-4 mb-3 mb-md-0">
+                <select class="form-select">
+                    <option selected>Filtrar por plataforma</option>
+                    <option>PC</option>
+                    <option>PlayStation 5</option>
+                    <option>Xbox Series X/S</option>
+                    <option>Nintendo Switch</option>
+                </select>
+            </div>
+            <div class="col-md-4 mb-3 mb-md-0">
+                <select class="form-select">
+                    <option selected>Filtrar por género</option>
+                    <option>Acción</option>
+                    <option>Aventura</option>
+                    <option>RPG</option>
+                    <option>Estrategia</option>
+                </select>
+            </div>
+            <div class="col-md-4">
+                <select class="form-select">
+                    <option selected>Ordenar por</option>
+                    <option>Recientes</option>
+                    <option>Mejor puntuados</option>
+                    <option>Alfabético</option>
+                </select>
+            </div>
+        </div>
+        
+        <!-- Listado de reseñas -->
+        <div class="row container">
+            <!-- Reseña 1 -->
+            <div class="col-lg-6 mb-4">
+                <div class="card review-card h-100">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="img/reseña1.jpg" class="img-fluid rounded-start h-100" alt="Hogwarts Legacy">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between">
+                                    <h3 class="card-title">Hogwarts Legacy</h3>
+                                    <div class="rating bg-success p-2 rounded">
+                                        <span class="fw-bold">9.5</span>/10
+                                    </div>
+                                </div>
+                                <div class="mb-2">
+                                    <span class="badge bg-info">Aventura</span>
+                                    <span class="badge bg-secondary">PS5</span>
+                                    <span class="badge bg-secondary">Xbox</span>
+                                    <span class="badge bg-secondary">PC</span>
+                                </div>
+                                <p class="card-text">Un impresionante viaje al mundo mágico que supera todas las expectativas...</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <a href="#" class="btn btn-sm btn-success">Leer reseña completa</a>
+                                    <small class="text-muted">Por: Laura González</small>
+                                </div>
+                                <br></br>
+                                <!-- Valoraciones estrellitas -->
+                                <div class="mb-3">
+                                    <div class="rating-widget mb-4">
+                                        <h4>Califica este juego</h4>
+                                        <div class="simple-rating mb-2">
+                                            <span class="rate-star" data-value="1">☆</span>
+                                            <span class="rate-star" data-value="2">☆</span>
+                                            <span class="rate-star" data-value="3">☆</span>
+                                            <span class="rate-star" data-value="4">☆</span>
+                                            <span class="rate-star" data-value="5">☆</span>
+                                            <span id="rating-text" class="rating-description">Sin valorar</span>
+                                        </div>
+                                        <input type="hidden" id="user-rating" name="rating">
+                                        
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Reseña 2 -->
+            <div class="col-lg-6 mb-4">
+                <div class="card review-card h-100">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="img/reseña2.png" class="img-fluid rounded-start h-100" alt="Dead Space">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between">
+                                    <h3 class="card-title">Dead Space Remake</h3>
+                                    <div class="rating bg-success p-2 rounded">
+                                        <span class="fw-bold">9.0</span>/10
+                                    </div>
+                                </div>
+                                <div class="mb-2">
+                                    <span class="badge bg-danger">Terror</span>
+                                    <span class="badge bg-secondary">PS5</span>
+                                    <span class="badge bg-secondary">Xbox</span>
+                                    <span class="badge bg-secondary">PC</span>
+                                </div>
+                                <p class="card-text">El clásico de terror espacial regresa con una impresionante renovación...</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <a href="#" class="btn btn-sm btn-success">Leer reseña completa</a>
+                                    <small class="text-muted">Por: Javier Ruiz</small>
+                                </div>
+                                <br></br>
+                                <!-- Valoraciones estrellitas -->
+                                <div class="mb-3">
+                                    <div class="rating-widget mb-4">
+                                        <h4>Califica este juego</h4>
+                                        <div class="simple-rating mb-2">
+                                            <span class="rate-star" data-value="1">☆</span>
+                                            <span class="rate-star" data-value="2">☆</span>
+                                            <span class="rate-star" data-value="3">☆</span>
+                                            <span class="rate-star" data-value="4">☆</span>
+                                            <span class="rate-star" data-value="5">☆</span>
+                                            <span id="rating-text" class="rating-description">Sin valorar</span>
+                                        </div>
+                                        <input type="hidden" id="user-rating" name="rating">
+                                        
+                                        
+                                    </div>
+                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Reseña 3 -->
+            <div class="col-lg-6 mb-4">
+                <div class="card review-card h-100">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="img/reseña3.jpg" class="img-fluid rounded-start h-100" alt="Forspoken">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between">
+                                    <h3 class="card-title">Forspoken</h3>
+                                    <div class="rating bg-warning p-2 rounded">
+                                        <span class="fw-bold">6.5</span>/10
+                                    </div>
+                                </div>
+                                <div class="mb-2">
+                                    <span class="badge bg-primary">RPG</span>
+                                    <span class="badge bg-secondary">PS5</span>
+                                    <span class="badge bg-secondary">PC</span>
+                                </div>
+                                <p class="card-text">Un mundo abierto con potencial pero lastrado por decisiones cuestionables...</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <a href="#" class="btn btn-sm btn-success">Leer reseña completa</a>
+
+                                </div>
+                                <br></br>
+                                <!-- Valoraciones estrellitas -->
+                                <div class="mb-3">
+                                    <div class="rating-widget mb-4">
+                                        <h4>Califica este juego</h4>
+                                        <div class="simple-rating mb-2">
+                                            <span class="rate-star" data-value="1">☆</span>
+                                            <span class="rate-star" data-value="2">☆</span>
+                                            <span class="rate-star" data-value="3">☆</span>
+                                            <span class="rate-star" data-value="4">☆</span>
+                                            <span class="rate-star" data-value="5">☆</span>
+                                            <span id="rating-text" class="rating-description">Sin valorar</span>
+                                        </div>
+                                        <input type="hidden" id="user-rating" name="rating">
+                                        
+                                    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <!-- Reseña 4 -->
+            <div class="col-lg-6 mb-4">
+                <div class="card review-card h-100">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="img/reseña4.jpg" class="img-fluid rounded-start h-100" alt="Hi-Fi Rush">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between">
+                                    <h3 class="card-title">Hi-Fi Rush</h3>
+                                    <div class="rating bg-success p-2 rounded">
+                                        <span class="fw-bold">8.8</span>/10
+                                    </div>
+                                </div>
+                                <div class="mb-2">
+                                    <span class="badge bg-warning">Acción</span>
+                                    <span class="badge bg-secondary">Xbox</span>
+                                    <span class="badge bg-secondary">PC</span>
+                                </div>
+                                <p class="card-text">Una sorpresa inesperada que combina ritmo y combate de forma innovadora...</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <a href="#" class="btn btn-sm btn-success">Leer reseña completa</a>
+                                    <small class="text-muted">Por: David Moreno</small>
+                                </div>
+                                <br></br>
+                                <!-- Valoraciones estrellitas -->
+                                <div class="mb-3">
+                                    <div class="rating-widget mb-4">
+                                        <h4>Califica este juego</h4>
+                                        <div class="simple-rating mb-2">
+                                            <span class="rate-star" data-value="1">☆</span>
+                                            <span class="rate-star" data-value="2">☆</span>
+                                            <span class="rate-star" data-value="3">☆</span>
+                                            <span class="rate-star" data-value="4">☆</span>
+                                            <span class="rate-star" data-value="5">☆</span>
+                                            <span id="rating-text" class="rating-description">Sin valorar</span>
+                                        </div>
+                                        <input type="hidden" id="user-rating" name="rating">
+                            
+                                        
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Paginación -->
+        <nav aria-label="Page navigation" class="mt-4">
+            <ul class="pagination justify-content-center">
+                <li class="page-item disabled">
+                    <a class="page-link" href="#" tabindex="-1">Anterior</a>
+                </li>
+                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#">Siguiente</a>
+                </li>
+            </ul>
+        </nav>
+    </main>
+
+    <!-- Footer -->
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5>GameSphere</h5>
+                    <p>El portal definitivo para los amantes de los videojuegos.</p>
+                    <img src="img/logo (1).png" alt="GameSphere" height="50">
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Enlaces rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white">Inicio</a></li>
+                        <li><a href="noticias.html" class="text-white">Noticias</a></li>
+                        <li><a href="reseñas.html" class="text-white">Reseñas</a></li>
+                        <li><a href="contacto.html" class="text-white">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Redes sociales</h5>
+                    <div class="social-icons">
+                        <a href="#" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-twitch"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p class="mb-0">&copy; 2025 GameSphere. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- javascript -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>

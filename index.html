@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameSphere - Inicio</title>
+    <!-- Bootstrap  gogogo -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Íconos de font awesome :D -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Bootstrap JS --> 
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Script personalizado -->
+    <script src="js/script.js"></script>
+
+    <!-- jQuery 3.6.0 slim + jQuery Migrate para compatibilidad -->
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+     <script src="https://code.jquery.com/jquery-migrate-3.4.0.min.js"></script>
+
+    <link rel="icon" type="image/png" href="img/logo (1).png" sizes="32x32">
+
+</head>
+<body>
+    <!-- Navbar B))) -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo (1).png" alt="GameSphere" height="50" class="d-inline-block align-top">
+                GameSphere
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="noticias.html">Noticias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reseñas.html">Reseñas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Slider de noticias destacadas -->
+    <div id="newsCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#newsCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#newsCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#newsCarousel" data-bs-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/slider1.jpg" class="d-block w-100" alt="Noticia 1">
+                <div class="carousel-caption">
+                    <h5>Nuevo lanzamiento de PlayStation 5</h5>
+                    <p>Descubre las últimas novedades de la próxima generación</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/slider2.jpg" class="d-block w-100" alt="Noticia 2">
+                <div class="carousel-caption">
+                    <h5>Análisis exclusivo de Zelda: Tears of the Kingdom</h5>
+                    <p>Nuestra opinión sobre el juego más esperado del año</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/slider3.jpg" class="d-block w-100" alt="Noticia 3">
+                <div class="carousel-caption">
+                    <h5>E3 2025: Todos los anuncios</h5>
+                    <p>Resumen de lo más destacado de la feria</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#newsCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#newsCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <!-- Últimas noticias -->
+    <section class="container my-5">
+        <h2 class="text-center mb-4">Últimas Noticias</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="img/noticia1.jpg" class="card-img-top" alt="Noticia 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Nuevo trailer de Starfield</h5>
+                        <p class="card-text">Bethesda muestra 15 minutos de gameplay del esperado RPG espacial.</p>
+                        <a href="#" class="btn btn-primary">Leer más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="img/noticia2.jpg" class="card-img-top" alt="Noticia 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Xbox Game Pass añade 5 nuevos juegos</h5>
+                        <p class="card-text">Microsoft anuncia los títulos que llegarán al servicio este mes.</p>
+                        <a href="#" class="btn btn-primary">Leer más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="img/noticia3.jpg" class="card-img-top" alt="Noticia 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Nintendo anuncia nueva consola</h5>
+                        <p class="card-text">La compañía japonesa estaría trabajando en el sucesor de Switch.</p>
+                        <a href="#" class="btn btn-primary">Leer más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reseñas populares -->
+    <section class="container my-5">
+        <h2 class="text-center mb-4">Reseñas Populares</h2>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between mb-3">
+                            <h5 class="card-title">Hogwarts Legacy</h5>
+                            <div class="rating">
+                                <span class="badge bg-success">9.5/10</span>
+                            </div>
+                        </div>
+                        <p class="card-text">El mundo mágico de Harry Potter cobra vida en este impresionante RPG de mundo abierto.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <a href="#" class="btn btn-outline-primary">Ver reseña completa</a>
+                            <small class="text-muted">Publicado hace 2 semanas</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between mb-3">
+                            <h5 class="card-title">Dead Space Remake</h5>
+                            <div class="rating">
+                                <span class="badge bg-success">9/10</span>
+                            </div>
+                        </div>
+                        <p class="card-text">El clásico de terror espacial regresa con gráficos renovados y gameplay mejorado.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <a href="#" class="btn btn-outline-primary">Ver reseña completa</a>
+                            <small class="text-muted">Publicado hace 1 mes</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5>GameSphere</h5>
+                    <p>El portal definitivo para los amantes de los videojuegos.</p>
+                    <img src="img/logo (1).png" alt="GameSphere" height="50">
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Enlaces rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white">Inicio</a></li>
+                        <li><a href="noticias.html" class="text-white">Noticias</a></li>
+                        <li><a href="reseñas.html" class="text-white">Reseñas</a></li>
+                        <li><a href="contacto.html" class="text-white">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Redes sociales</h5>
+                    <div class="social-icons">
+                        <a href="#" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-twitch"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p class="mb-0">&copy; 2025 GameSphere. Todos los derechos reservados.</p>
+            </div>
+        </div>
+
+        
+        <div class="text-center">
+         <p id="visit-counter" class="text-muted small"></p>
+        </div>
+
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Script personalizado -->
+    <script src="js/script.js"></script>
+
+    <!-- JQUERYSSSSSS -->
+    <script>
+        $(document).ready(function() {
+            // Efecto parallax mejorado para el hero section
+            $(window).scroll(function() {
+                var scrollPos = $(this).scrollTop();
+                $('.parallax').css('transform', 'translateY(' + scrollPos * 0.5 + 'px)');
+            });
+        
+            // Animación de cards al hacer hover
+            $('.card').hover(
+                function() {
+                    $(this).stop().animate({
+                        'marginTop': '-10px',
+                        'boxShadow': '0 10px 20px rgba(0, 255, 65, 0.3)'
+                    }, 200);
+                },
+                function() {
+                    $(this).stop().animate({
+                        'marginTop': '0',
+                        'boxShadow': '0 5px 15px rgba(0, 0, 0, 0.1)'
+                    }, 200);
+                }
+            );
+        });
+    </script>
+</body>
+</html>
